@@ -1,0 +1,303 @@
+/* ------------------------------
+   General Page Styling
+------------------------------ */
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    padding: 0;
+    color: #1e293b;
+}
+
+
+/* ------------------------------
+   Main Container
+------------------------------ */
+
+.container {
+
+    width: 70%;
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ------------------------------
+   Headings
+------------------------------ */
+
+h1 {
+
+    color: #1e3a8a;
+
+    margin-bottom: 30px;
+}
+
+h2 {
+
+    color: #334155;
+
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------------
+   Password Input
+------------------------------ */
+
+.password-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+#passwordInput {
+
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 16px;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+#passwordInput:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow: 0px 0px 8px rgba(37, 99, 235, 0.3);
+}
+
+
+/* ------------------------------
+   Show Password
+------------------------------ */
+
+.show-password {
+
+    text-align: left;
+
+    font-size: 15px;
+}
+
+
+/* ------------------------------
+   Buttons
+------------------------------ */
+
+.button-group {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+}
+
+button {
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 12px 20px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.check-btn {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+.check-btn:hover {
+
+    background: #1d4ed8;
+}
+
+.generate-btn {
+
+    background: #16a34a;
+
+    color: white;
+}
+
+.generate-btn:hover {
+
+    background: #15803d;
+}
+
+.analysis-btn {
+
+    background: #475569;
+
+    color: white;
+}
+
+.analysis-btn:hover {
+
+    background: #334155;
+}
+
+
+/* ------------------------------
+   Cards
+------------------------------ */
+
+.result-card {
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* ------------------------------
+   Strength Text
+------------------------------ */
+
+#passwordStrength {
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+/* ------------------------------
+   Status Text
+------------------------------ */
+
+#passwordStatus {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* ------------------------------
+   Generated Password
+------------------------------ */
+
+.generated-section {
+
+    margin-top: 25px;
+}
+
+#generated {
+
+    background: #f1f5f9;
+
+    border: 1px solid #cbd5e1;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    word-wrap: break-word;
+
+    margin-top: 10px;
+}
+
+
+/* ------------------------------
+   Divider
+------------------------------ */
+
+hr {
+
+    border: none;
+
+    border-top: 1px solid #e2e8f0;
+
+    margin: 25px 0;
+}
+
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+
+@media (max-width: 768px) {
+
+    .container {
+
+        width: 92%;
+
+        padding: 20px;
+    }
+
+    .button-group {
+
+        flex-direction: column;
+    }
+
+    button {
+
+        width: 100%;
+    }
+}
+
+ul {
+
+    text-align: left;
+
+    line-height: 2;
+}
+
+li {
+
+    margin-bottom: 8px;
+}
+
+#passwordReason {
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #475569;
+}

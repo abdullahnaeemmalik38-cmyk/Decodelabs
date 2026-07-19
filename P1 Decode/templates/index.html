@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1> Password Strength Checker</h1>
+
+        <!-- Password Input -->
+        <div class="password-section">
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter your password">
+
+            <label class="show-password">
+                <input type="checkbox" onclick="togglePassword()">
+                Show Password
+            </label>
+
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-group">
+
+            <button class="check-btn" onclick="checkPassword()">
+                Check Password
+            </button>
+
+            <button class="generate-btn" onclick="generatePassword()">
+                Generate Strong Password
+            </button>
+
+        </div>
+
+        <hr>
+
+        <!-- Password Strength -->
+        <div class="result-card">
+
+            <h2>Password Strength</h2>
+
+            <p id="passwordStrength">
+                Not Checked
+            </p>
+
+        </div>
+
+
+        <!-- Reason -->
+
+        <div class="result-card">
+
+            <h2>Reason</h2>
+
+            <p id="passwordReason">
+                No analysis performed yet.
+            </p>
+
+        </div>
+
+
+        <!-- Password Status -->
+        <div class="result-card">
+
+            <h2>Password Status</h2>
+
+            <p id="passwordStatus">
+                Enter a password and click Check Password.
+            </p>
+
+        </div>
+
+        <!-- Analysis Button -->
+        <div class="analysis-section">
+
+            <button class="analysis-btn" onclick="viewAnalysis()">
+                View Security Analysis
+            </button>
+
+        </div>
+
+        <hr>
+
+        <!-- Generated Password -->
+        <div class="generated-section">
+
+            <h2>Generated Password</h2>
+
+            <div id="generated">
+                No password generated yet.
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

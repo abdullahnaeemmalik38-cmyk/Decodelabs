@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Security Analysis</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔎 Analysis of the Given Password</h1>
+
+        <div class="result-card">
+            <h2>Password Strength</h2>
+            <p id="strength"></p>
+        </div>
+
+        <div class="result-card">
+            <h2>Password Length</h2>
+            <p id="length"></p>
+        </div>
+
+        <div class="result-card">
+            <h2>Character Classes Detected</h2>
+
+            <ul id="classes"></ul>
+        </div>
+
+        <div class="result-card">
+            <h2>Entropy</h2>
+            <p id="entropy"></p>
+        </div>
+
+        <div class="result-card">
+            <h2>Estimated Crack Time</h2>
+            <p id="crackTime"></p>
+        </div>
+
+        <div class="result-card">
+            <h2>Password Status</h2>
+            <p id="status"></p>
+        </div>
+
+        <div class="result-card">
+            <h2>Reason</h2>
+            <p id="reason"></p>
+        </div>
+
+        <button onclick="window.location.href='/'">
+            Back to Password Checker
+        </button>
+
+    </div>
+
+    <script src="/static/analysis.js"></script>
+
+</body>
+
+</html>
